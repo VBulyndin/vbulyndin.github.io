@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  background: #EEE;
+  font-family: sans-serif;
+}
+.box {
+  width: 1000px;
+  height: 870px;
+  margin: auto;
+  background-color: #FFF;
+  box-shadow: 0 0 8px 1px rgba(209,209,209,0.75);
+}
+/*header*/
+header{
+  padding: 20px 50px 40px;
+}
+.menu{
+  background: #5a5a5a;
+  color: white;
+  font-size: 14px;
+}
+.mainmenu{
+  display: inline-block;
+  width: 119px;
+  margin-left: 25px;
+}
+.menu .mainmenu1{
+  display: inline-block;
+  width: 100px;
+  border-left: 1px solid #838383;
+  border-right: 1px solid #838383;
+  background-color: #3f3f3f;
+  text-align: center;
+}
+.mainmenu2{
+  display: inline-block;
+  width: 100px;
+  margin-left: 40px;
+  text-align: center;
+}
+.mainmenu3{
+  display: inline-block;
+  width: 100px;
+  margin-left: 10px;
+  text-align: center;
+}
+/*sidebar*/
+ .box1{
+  width: 240px;
+  height: 240px;
+  margin-right: 50px;
+  padding: 0 0 0 50px;
+  float: left;
+  font-size: 14px;
+}
+.box1 div{
+  height: 40px;
+  border: 1px solid #c8c8c8;
+}
+.box1 p{
+  padding-left: 25px;
+}
+.item{
+  padding-left: 15px;
+  background-color: #f9f9f9;
+}
+/*content*/
+.box2 {
+padding: 0 25px 0 340px;
+font-size: 12px;
+}
+img {
+	width: 610px;
+}
+.box2 p{
+  margin-top: 40px;
+  padding: 0 40px 0 20px;
+  font-size: 12px;
+}
+/*footer*/
+footer {
+  padding: 20px 50px 40px;
+}
+.footer{
+  margin-top: 40px;
+  background: #e1e1e1;
+}
+.footer .mainmenu1{
+  display: inline-block;
+  width: 100px;
+  text-decoration: underline;
+  text-align: center;
+}
+.mainmenu4{
+  display: inline-block;
+  width: 370px;
+  text-align: right;
+}
