@@ -1,7 +1,7 @@
 body {
   margin: 0;
   background: #EEE;
-  font-family: sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 .box {
   width: 1000px;
@@ -12,57 +12,77 @@ body {
 }
 /*header*/
 header{
-  padding: 20px 50px 40px;
+  padding: 20px 50px 0;
+  margin-bottom: 40px;
 }
-.menu{
-  background: #5a5a5a;
+.mainmenu {
+  line-height: 2.7;
+  background: linear-gradient(to top, #5d5d5d, #464545);
   color: white;
+  padding-left: 0;
+  height: 40px;
   font-size: 14px;
 }
-.mainmenu{
+.mainmenu li{
   display: inline-block;
-  width: 119px;
-  margin-left: 25px;
+  border-left: 1px solid rgba(0, 120, 201, 0);
+  border-right: 1px solid rgba(0, 120, 201, 0);
 }
-.menu .mainmenu1{
-  display: inline-block;
-  width: 100px;
+.mainmenu li:hover  {
+  background: linear-gradient(to top, #4a4a4a, #303030);
   border-left: 1px solid #838383;
   border-right: 1px solid #838383;
-  background-color: #3f3f3f;
+}
+.menu1{
+  padding-left: 25px;
+  height: 40px;
+  width: 119px;
+}
+.menu2{
+  height: 40px;
+  width: 100px;
   text-align: center;
 }
-.mainmenu2{
-  display: inline-block;
-  width: 100px;
-  margin-left: 40px;
+.menu3{
+  height: 40px;
+  width: 150px;
   text-align: center;
 }
-.mainmenu3{
-  display: inline-block;
+.menu4{
+  height: 40px;
   width: 100px;
-  margin-left: 10px;
   text-align: center;
+}
+.mainmenu a{
+  text-decoration: none;
+  color: white;
 }
 /*sidebar*/
- .box1{
+ .sidebar {
   width: 240px;
   height: 240px;
-  margin-right: 50px;
-  padding: 0 0 0 50px;
+  margin-left: 50px;
   float: left;
   font-size: 14px;
 }
-.box1 div{
-  height: 40px;
+.catalog{
+  padding-left: 0;
+  margin-top: 0;
+}
+.item {
+  display: inline-block;
+  width: 240px;
+  padding: 10px 0 10px 25px;
   border: 1px solid #c8c8c8;
+  box-sizing: border-box;
 }
-.box1 p{
-  padding-left: 25px;
-}
-.item{
-  padding-left: 15px;
+.item:hover{
+  padding-left: 40px;
   background-color: #f9f9f9;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
 /*content*/
 .box2 {
@@ -79,20 +99,23 @@ img {
 }
 /*footer*/
 footer {
-  padding: 20px 50px 40px;
+  padding: 20px 50px 0;
 }
 .footer{
-  margin-top: 40px;
   background: #e1e1e1;
+  font-size: 14px;
 }
-.footer .mainmenu1{
+.footer li{
+  line-height: 2.8;
   display: inline-block;
-  width: 100px;
-  text-decoration: underline;
-  text-align: center;
 }
-.mainmenu4{
-  display: inline-block;
+.menu5{
   width: 370px;
   text-align: right;
+}
+.subfooter{
+  padding-left: 0;
+}
+.subfooter .menu2:hover{
+  text-decoration: underline;
 }
