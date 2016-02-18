@@ -116,6 +116,6 @@ footer {
 .subfooter{
   padding-left: 0;
 }
-.subfooter .menu2:hover{
+.subfooter li:hover{
   text-decoration: underline;
 }
