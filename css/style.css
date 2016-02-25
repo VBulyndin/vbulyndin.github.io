@@ -34,7 +34,7 @@
 
 }
 body {
-    background-image: url(../img/background.png);
+    background-image: url(/img/background.png);
     background-repeat: no-repeat;
     background-position: center;
      margin: 0 auto;
