@@ -3,140 +3,182 @@
   padding: 0;
 }
 @font-face {
-    font-family: "leaguegothic";
-    src: url('../fonts/leaguegothic-regular-webfont.eot');
-    src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
-         url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
-         url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: "leaguegothic";
+  src: url('../fonts/leaguegothic-regular-webfont.eot');
+  src: url('../fonts/leaguegothic-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+       url('../fonts/leaguegothic-regular-webfont.woff') format('woff'),
+       url('../fonts/leaguegothic-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
 body{
-
+  width: 100%;
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-position-x: 50%;
   font-family: "leaguegothic";
 }
 .fon{
-
   position: absolute;
-  top:846px;
+  top:547px;
   width:100%;
-  height: 342px;
+  height: 595px;
   border-top:1px solid #33253a;
   border-bottom:1px solid #1d2f37;
   background: linear-gradient(to top, #33263a, #745083);
 }
 .fon1{
   position: absolute;
-  top:278px;
+  top:204px;
   width:100%;
-  height: 400px;
-  background-color: #000000;
-  opacity: 0.2;
+  height: 245px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 .wrapper{
-
-  width: 960px;
+  width: 440px;
   margin: 0 auto;
-
-
 }
 header{
   overflow: hidden;
   margin-top: 60px;
-  height: 201px;
+  height: 132px;
 }
-nav {
-  overflow: hidden;
-
+content{
+  position: relative;
+}
+#nav {
+  position: absolute;
+  margin-top: 11px;
+  width: 246px;
+  top: -75px;
+  left: 98px;
+  border : 1px solid transparent;
+  line-height: 1.75;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+  font-size: 16px;
+  z-index: 120;
 }
 header .logo{
-  float: left;
   color: white;
-  font-weight: bold;
-  font-size: 48px;
-  font-stretch:    condensed;
+  text-align: center;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
+  font-size: 48px;
+  font-weight: bold;
 }
 .logo span{
   color: #63456f;
   text-shadow: none;
 }
-nav .menu{
-  float: right;
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+.menu .submenu{
+  position: absolute;
+  display: none;
+  width: 244px;
+  top: 39px;
+  left: -1px;
+  border: 1px solid #0f191f;
+  border-top: 0px solid #0f191f;
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius: 10px;
+  background-color: #36293e;
+  opacity: 0.95;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.menu .submenu li{
+  border-bottom: 2px solid #36283e;
+  border-top: 1px solid #523e5a;
+}
+.menu .submenu li:hover{
+  background-color: #201925;
+  border-bottom: 2px solid #edbfff;
 }
 nav a{
   color: white;
   text-decoration:   none;
-
   font-size: 24px;
 }
 nav li{
-  display: inline-block;
-  margin-top: 11px;
-  margin-left: 52px;
+  position: relative;
+  display:  block;
+  text-align: center;
 }
-nav li:hover{
+nav li:hover .submenu{
+  display: block;
+}
+.menu > li:hover{
+  border-top: 1px solid #0f191f;
+  border-left: 1px solid #0f191f;
+  border-right: 1px solid #0f191f;
+  border-top-left-radius:10px;
+  border-top-right-radius: 10px;
+  background-color: #36293e;
+  opacity: 0.9;
+}
+.home > a {
   border-bottom: 2px solid #edbfff;
-
 }
-
+nav .hidden468{
+  position: absolute;
+  left: -8888px;
+}
 article {
-  float: left;
-  height: auto;
-  width: 55%;
-  margin-top: 88px;
+  position: absolute;
+  top: 95px;
+  width: 250px;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-
 }
 content article h1 {
-  font-size: 60px;
   color: white;
   font-weight: normal;
+  font-size: 36px;
 }
 content article h4{
-  margin-top: -10px;
+  overflow: hidden;
+  height: 30px;
+  margin-top: -8px;
   color: #edbfff;
   font-weight: normal;
-  font-size: 32px;
+  font-size: 18px;
 }
 content article p{
+  overflow: hidden;
+  display: none;
+  height: 140px;
   margin-top: 2px;
   color: white;
   font-family: "Open Sans Light", sans-serif;
   font-size: 18px;
 }
-content figure{
-  float: right;
-  margin-right: 72px;
+content figure img{
+  position: absolute;
+  margin-right: 0;
+  top:-10px;
+  left:237px;
+  z-index: 50;
 }
 .clear_both{
   overflow: hidden;
   clear: both;
 }
 content figcaption img{
-  float: right;
-  margin: 71px 168px 0 0;
+  position: absolute;
+  margin: 55px 168px 0 0;
+  top: 221px;
+  left: 190px;
+}
+
+#big{
+  display: none;
 }
 aside{
-  float: left;
+  width: 100%;
   color: white;
-  width: 33.3%;
   margin-top: 73px;
-
-
 }
 aside h2{
   margin-bottom: 4px;
   text-shadow: 1px 1px 0px rgba(15, 21, 24, 0.9);
-  font-size: 30px;
+  font-size: 24px;
   font-weight: normal;
 }
 aside h4{
@@ -153,24 +195,29 @@ aside a:hover{
   text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
 }
 aside p{
-  font-size: 16px;
-  font-family: "Open Sans Light", sans-serif;
+  overflow: hidden;
   line-height: 1.5;
   text-shadow: 1px 1px 0px rgba(15, 21, 24, 0.9);
+  font-family: "Open Sans Light", sans-serif;
+  font-size: 16px;
 }
 .aside__icon{
   float: left;
   width: 27px;
   height: 27px;
-  margin-bottom: 150px;
+  margin-bottom: 100px;
   margin-top: 11px;
-  margin-right: 26px;
+  margin-right: 11px;
   margin-left: 10px;
-
 }
 .aside__text{
-
- display: inline ;
+ display: block;
+}
+.aside__box{
+  height: 100px;
+}
+.aside__second {
+  margin-top: 10px;
 }
 .position1{
   background : url(../img/icons.png) -1px 0;
@@ -183,48 +230,57 @@ aside p{
 }
 .arrow_left{
   position: absolute;
-  top: 463px;
+  top: 315px;
 }
 .arrow_right{
   position: absolute;
-  top: 463px;
-  left: 1323px;
+  top: 315px;
+  left: calc(100% - 26px);
 }
 .fon2 {
   position: absolute;
-  top:1190px;
+  top:1146px;
   width:100%;
-  height: 485px;
+  height: 785px;
   background-color: #f9f9f9;
 }
 aside .format h2{
   margin-top: 30px;
-  text-transform: uppercase;
-  line-height: 0.8;
+  padding-top: 30px;
   color: #454545;
+  line-height: 0.8;
+  text-transform: uppercase;
 }
 aside .format span {
   color: #edbfff;
   text-shadow: 1px 1px 0px rgba(237, 191, 255, 0.9);
 }
 .aside{
-  width: 50%;
+  width: 100%;
+}
+.aside__block{
+  height: 60px;
 }
 .format p{
-  word-wrap: break-word;
+  margin: 14px 63px 60px 0;
+  height: 29px;
   color: black;
   text-shadow: none;
-  margin: 14px 56px 60px 0;
 }
- .blog{
-  background: url(../img/blablabla.png) no-repeat 24px 0;
+.format .blog1{
+  margin: 14px 20px 60px 0;
+  height: 166px;
+  color: black;
+  text-shadow: none;
+}
+.blog{
+  background: url(../img/blablabla468.png) no-repeat 24px 0;
 }
 .position4{
   margin-left: 0px;
   margin-right: 36px;
   margin-top: 16px;
   margin-bottom: 170px;
-
 }
 .post h2{
   margin-top: 30px;
@@ -233,7 +289,6 @@ aside .format span {
   color: #454545;
 }
 .format h4{
-
   font-size: 16px;
   font-family: "Open Sans";
   color: black;
@@ -244,16 +299,18 @@ aside .format span {
 }
 .post .aside__icon{
   float: left;
-
   width: 50px;
   height: 50px;
   margin-bottom: 0px;
-  margin-top: 16px;
+  margin-top: 0px;
   margin-right: 16px;
   margin-left: 28px;
 }
 .post p{
   margin: 0 0 18px 0;
+}
+.post{
+  margin-top: 50px;
 }
 .position5{
   background: url(../img/iconpost.png) no-repeat 0 0;
@@ -270,59 +327,52 @@ aside h3{
   line-height: 1.333;
   text-align: right;
   font-size: 18px;
-
+}
+.item_vis{
+  display: none;
 }
 .point{
   margin: 5px 0 0 165px;
 }
 .fon3{
   position: absolute;
-  top:1675px;
+  top:1930px;
   width:100%;
-  height: 120px;
+  height: 234px;
   background-color: #f9f9f9;
   border-top: 1px solid #e6e6e6;
   border-bottom:1px solid #e6e6e6;
 }
-
 .logos{
   overflow: hidden;
-  margin-top: 25px;
-  margin-left: 63px;
-  margin-right: 63px;
+  margin-top: 36px;
 }
 .logo1{
   float: left;
-  margin-left: 27px;
-  margin-right: 27px;
-  width: 205px;
+  margin-left: 60px;
+  margin-right: 20px;
+  width: 340px;
   height: 64px;
   background: url(../img/logos.png) no-repeat 0 0;
 }
 .logo2{
-  float: left;
-  margin-left: 40px;
-  margin-right: 40px;
-  width: 193px;
+  margin-top: 95px;
+  margin-left: 38px;
+  margin-right: 25px;
+  width: 390px;
   height: 64px;
-  background: url(../img/logos.png) no-repeat -270px 0;
-}
-.logo3{
-  float: left;
-  margin-left: 40px;
-  width: 250px;
-  height: 64px;
-  background: url(../img/logos.png) no-repeat -527px 0;
+  background: url(../img/logos.png) no-repeat -400px 0;
 }
 .fon4{
   position: absolute;
-  top:1795px;
+  top:2166px;
   width:100%;
-  height: 395px;
+  height: 668px;
   background-color: #ececec;
   border-top: 1px solid #d8d8d8;
 }
 aside .copyright{
+  display: none;
   margin-top: 16px;
   margin-bottom: 12px;
   color: #c5c5c5;
@@ -331,30 +381,32 @@ aside .copyright{
   font-style: italic;
 }
 #pingbuller{
-  font-size: 48px;
+  font-size: 24px;
 }
 #pingbuller span{
   color: #b9b9b9;
 }
 #item {
   margin-right: 10px;
+  height: 100px;
 }
  .zero{
-   float: left;
-   width: 27px;
-   height: 27px;
-   margin-top: 190px;
+  display: none;
+  float: left;
+  width: 27px;
+  height: 27px;
+  margin-top: 190px;
 }
 footer{
   position: absolute;
-  top:2190px;
+  top:2835px;
   width:100%;
-  height: 114px;
-  background-image: url(../img/bgfooter.png);
+  height: 200px;
+  background-image: url(../img/bgfooter468.png);
 }
 #footer .footer{
   float: left;
-
+  margin-left: 15px;
 }
 #footer{
   margin-top: 34px;
@@ -363,16 +415,17 @@ footer{
   font-size: 20px;
 }
 #footer li{
+  display: inline-block;
+  margin-top: 11px;
   margin-left: 0;
-  margin-right: 52px;
+  margin-right: 17px;
 }
 #footer li:hover{
   border-bottom: 0px solid #edbfff;
-
 }
 #Designed_by{
-  float: right;
-  margin-top: 20px;
+  padding-top: 71px;
+  margin-right: 155px;
 }
 #Designed_by p{
   color: white;
@@ -380,7 +433,6 @@ footer{
   text-align: right;
   font-family: "open sans light", sans-serif;
   font-size: 12px;
-
 }
 #Designed_by span{
   font-weight: bold;
