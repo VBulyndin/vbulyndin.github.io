@@ -258,9 +258,8 @@ aside .format span {
   color: #454545;
 }
 .format h4{
-
   font-size: 16px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   color: black;
   line-height: 1.5;
   margin-top: 17px;
@@ -269,7 +268,6 @@ aside .format span {
 }
 .post .aside__icon{
   float: left;
-
   width: 50px;
   height: 50px;
   margin-bottom: 0px;
@@ -382,7 +380,6 @@ footer{
 }
 #footer .footer{
   float: left;
-
 }
 #footer{
   margin-top: 34px;
@@ -397,7 +394,6 @@ footer{
 }
 #footer li:hover{
   border-bottom: 0px solid #edbfff;
-
 }
 #Designed_by{
   float: right;
@@ -409,7 +405,6 @@ footer{
   text-align: right;
   font-family: "open sans light", sans-serif;
   font-size: 12px;
-
 }
 #Designed_by span{
   font-weight: bold;
